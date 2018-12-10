@@ -8,7 +8,7 @@ tags:
     - javascript
 ---
 
-Hace poco les hable de como integrar [Grunt con Font Awesome](http://osiux.ws/2013/12/usar-font-awesome-con-grunt/), y desde entonces me tope con [gulp.js](http://gulpjs.com/), que hace lo mismo que [Grunt](http://gruntjs.com/) pero mas rápido y sencillo :D Integrándolo en un proyecto para probarlo me tope con un dilema. Hay ciertas tareas que solamente quiero correr cuando estoy desarrollando y otras cuando estoy preparando para subir a producción. En grunt lo hacia usando distintas tareas con diferentes opciones cada una:
+Hace poco les hable de como integrar [Grunt con Font Awesome](/2013-12-28--usar-font-awesome-con-grunt/), y desde entonces me tope con [gulp.js](http://gulpjs.com/), que hace lo mismo que [Grunt](http://gruntjs.com/) pero mas rápido y sencillo :D Integrándolo en un proyecto para probarlo me tope con un dilema. Hay ciertas tareas que solamente quiero correr cuando estoy desarrollando y otras cuando estoy preparando para subir a producción. En grunt lo hacia usando distintas tareas con diferentes opciones cada una:
 
 ```javascript
 grunt.initConfig({

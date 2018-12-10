@@ -8,7 +8,7 @@ tags:
     - Querétaro
 ---
 
-[![BarCamp Logo](http://osiux.ws/wp-content/uploads/2013/11/bar_camp_qro-300x69.png)](9c61f48c-bc33-4aa9-a452-9f69c5f8fc46.png) 
+![BarCamp Logo](9c61f48c-bc33-4aa9-a452-9f69c5f8fc46.png) 
 
 Este sábado 10 de Abril fue el BarCamp5 en México, en la hermosa ciudad de Querétaro, y tuve la fortuna de poder asistir. Un BarCamp es una serie de desconferencias, donde los asistentes son los mismos ponentes y quienes generan el contenido dando charlas, talleres, debates, etc.
 

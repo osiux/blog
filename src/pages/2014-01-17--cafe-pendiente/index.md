@@ -4,7 +4,7 @@ category: Ocio/Humor
 date: 2014-01-17T04:38:16-0600
 ---
 
-[![Café Pendiente](http://osiux.ws/wp-content/uploads/2014/01/9d9Ymdi.png)](2d567354-a3e2-496f-847e-e1df79950fa1.png)
+![Café Pendiente](2d567354-a3e2-496f-847e-e1df79950fa1.png)
 
 Hace tiempo me encontré esta historia y me pareció una gran idea, aunque no lo pensé mucho mas. Hace unas semanas me tope con [Café Pendiente](http://cafependiente.org.mx/), que es la iniciativa de la imagen aquí en México.
 
