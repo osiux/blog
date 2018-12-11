@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/posts`,
         name: 'pages',
       },
     },
@@ -71,7 +71,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/salem.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -83,5 +83,26 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    {
+        resolve: `gatsby-plugin-favicon`,
+        options: {
+            logo: './src/assets/salem.png',
+            lang: 'es-MX',
+            background: '#ffffff',
+            theme_color: '#ffffff',
+            icons: {
+                android: true,
+                appleIcon: true,
+                appleStartup: true,
+                coast: false,
+                favicons: true,
+                firefox: true,
+                opengraph: false,
+                twitter: false,
+                yandex: false,
+                windows: false,
+            },
+        },
+    },
   ],
 }

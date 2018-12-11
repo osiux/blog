@@ -9,6 +9,7 @@
   "dependencies": {
     "gatsby": "^2.0.19",
     "gatsby-plugin-catch-links": "^2.0.9",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
     "gatsby-plugin-manifest": "^2.0.5",
@@ -42,7 +43,7 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/osiux/blog",
   "keywords": [
     "gatsby"
   ],
@@ -50,7 +51,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/osiux/blog.git"
   },
   "scripts": {
     "dev": "gatsby develop",
