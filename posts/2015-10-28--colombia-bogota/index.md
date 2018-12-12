@@ -30,4 +30,12 @@ La vi en una estación del transmilenio y fuimos por café y pan, ahí estuvimo
 
 El último día en Bogotá tenía que ir a la terminal de autobuses a comprar mi pasaje, ya que no me dejaba comprarlo por internet. También había contactado con Johanna, una chica de Couchsurfing, que aunque no pudo alojarme, me dijo que podíamos salir a tomar un café si tenía tiempo, así que antes de ir a la terminal pase a una parque donde nos veríamos para platicar. Es una chica muy buena onda y con muy buena actitud, estuvimos platicando de viajes pasados y futuros y para mi buena suerte, cuando nos despedíamos, me dijo que ella vivía por la zona de la terminal y que me llevaba, ¡genial! Me dejó en la terminal, compre mi pasaje y me salí a caminar un rato por la zona para llegar a la estación más cercana para regresar a casa de Karen por mis maletas y entonces listo, salir a [Medellín](/2015-10-30--colombia-medellin/).
 
-\[gallery type=&#34;rectangular&#34; link=&#34;file&#34; ids=&#34;260,261,259,264,262,263,267,265,266,268&#34;\]
+![Bogota 1](bogota1.jpg)
+![Bogota 2](bogota2.jpg)
+![Bogota 3](bogota3.jpg)
+![Bogota 4](bogota4.jpg)
+![Bogota 5](bogota5.jpg)
+![Bogota 6](bogota6.jpg)
+![Zipaquira 1](zipaquira1.jpg)
+![Zipaquira 2](zipaquira2.jpg)
+![Zipaquira 3](zipaquira3.jpg)

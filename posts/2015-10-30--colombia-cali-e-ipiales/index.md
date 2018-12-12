@@ -31,4 +31,8 @@ Estuve un par de horas ahí y luego me regresé a Ipiales, como aún quedaban va
 
 Al día siguiente me desperté temprano, desayuné lo que me dieron en el hotel y me fui caminando a la terminal de autobuses, donde tomaría otro taxi al puente Rumichaca que está justo en la frontera de Colombia y Ecuador, y después de un ratito y unos tramites rápidos, ya estaba en Ecuador :)
 
-\[gallery type=&#34;rectangular&#34; link=&#34;file&#34; ids=&#34;295,296,297,298,299,300&#34;\]
+![Ipiales 1](ipiales1.jpg)
+![Ipiales 2](ipiales2.jpg)
+![Ipiales 3](ipiales3.jpg)
+![Ipiales 4](ipiales4.jpg)
+![Ipiales 5](ipiales5.jpg)

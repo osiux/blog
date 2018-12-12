@@ -24,4 +24,10 @@ Después fuimos hacia el centro, entramos al [Instituto de Cultura y Patrimonio 
 
 Para mi último día en Medellín no tenía nada planeado, en parte estaba un poco cansado de la caminata de los días pasados y quería descansar un poco pues en la noche partía a Cali y era un viaje de alrededor de 12 horas, así que me la pase platicando con Daniel y Cristina y jugando un poco con los niños de los departamentos cercanos. Por la noche, después de despedirme, un vecino del lugar me llevó a la terminal de autobuses y de listo, ¡a [Cali](/2015-10-30--colombia-cali-e-ipiales/)!
 
-\[gallery type=&#34;rectangular&#34; link=&#34;file&#34; ids=&#34;270,271,274,269,272,275,273,276&#34;\]
+![Meddelin 1](medellin1.jpg)
+![Meddelin 2](medellin2.jpg)
+![Jardin Botanico 1](medellin-jardin-botanico-1.jpg)
+![Jardin Botanico 2](medellin-jardin-botanico-2.jpg)
+![Jardin Botanico 3](medellin-jardin-botanico-3.jpg)
+![Parque Botero 1](medellin-parque-botero.jpg)
+![Parque Botero 2](medellin-parque-botero-2.jpg)
