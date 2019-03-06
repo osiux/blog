@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/app.b6f197430f783b3e67aa.css">code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style data-href="/1.76e6c55a11ab238cc939.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.0.64"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><title data-react-helmet="true">Colombia: Medellín | Sin Ideas</title><meta data-react-helmet="true" name="description" content="Al comienzo no tenía pensado ir a Medellín, creía que me desviaba un poco de la ruta que necesitaba, pero no pasó ni un día que alguien me…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}.gatsby-resp-image-figcaption{margin:0 auto;text-align:center;}</style><link rel="shortcut icon" href="/icons-be277f6538a07a5567214b3d9c7e09fa/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/icons-be277f6538a07a5567214b3d9c7e09fa/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons-be277f6538a07a5567214b3d9c7e09fa/favicon-32x32.png"/><link rel="manifest" href="/icons-be277f6538a07a5567214b3d9c7e09fa/manifest.json"/><meta name="mobile-web-app-capable" content="yes"/><meta name="theme-color" content="#ffffff"/><meta name="application-name" content="gatsby-starter-blog"/><link rel="apple-touch-icon" sizes="57x57" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-152x152.png"/><link rel="apple-touch-icon" sizes="167x167" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-167x167.png"/><link rel="apple-touch-icon" sizes="180x180" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-180x180.png"/><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-icon-1024x1024.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="gatsby-starter-blog"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-320x460.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-640x920.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-640x1096.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-750x1294.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-1182x2208.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-1242x2148.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-748x1024.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-768x1004.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-1496x2048.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-be277f6538a07a5567214b3d9c7e09fa/apple-touch-startup-image-1536x2008.png"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-488f3ff65783f501ea32.js"/><link as="script" rel="preload" href="/1-4b4f1862100537708504.js"/><link as="script" rel="preload" href="/0-7446a300839740498125.js"/><link as="script" rel="preload" href="/app-2d3fa2b6ef9997eb3255.js"/><link as="script" rel="preload" href="/webpack-runtime-bf3853b111de70b95816.js"/><link rel="preload" href="/static/d/759/path---colombia-medellin-7-ba-f02-Q3lGdTJg2LNIY8SiBeUe7rUPDAQ.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Sin Ideas</a></h3><h1>Colombia: Medellín</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">October 30, 2015</p><div><p>Al comienzo no tenía pensado ir a Medellín, creía que me desviaba un poco de la ruta que necesitaba, pero no pasó ni un día que alguien me dijera: ”tienes que ir a Medellín”, y pues hay que hacer caso de esas cosas. Para suerte mía, mientras estaba en Bogotá había recibido un mensaje de Daniel en Couchsurfing diciéndome que si iba para allá podía quedarme en su casa, y con mucho gusto acepté su ofrecimiento. Llegué por la mañana, con una vista privilegiada pues es un valle y el autobús va bajando dando vueltas alrededor, el clima hacia que hubiera un poco de neblina lo cual solo hacía que todo se viera hermoso.</p>
+<p>Llegando pregunté como ir al metro, pues quedé de ver a Daniel en una de las estaciones, por suerte estaba justo a la salida de la terminal y fue fácil llegar. Tuve que esperar un poco para poder subir con mis mochilas, pero después de un rato llegué a la estación donde quedamos de vernos y nos encontramos fuera, y luego de los saludos y presentaciones, fuimos a su casa para poder dejar mis mochilas y salir a acompañarlo a unos compromisos que tenía.</p>
+<p>Durante el camino me estaba explicando algunos proyectos que le gustaría hacer, como un huerto público en un terreno que tienen en el edificio con sus vecinos, y por lo cual justamente íbamos hacia el <a href="http://www.botanicomedellin.org/" target="_blank" rel="noopener">Jardín Botánico</a>, pues iba a hablar con alguien de ahí a ver si podía conseguir apoyo de algún tipo. Es un lugar muy bonito, mucha gente sentada en alguna parte leyendo o platicando, pero sin duda mi parte favorita fue el Orquideorama y el bosque tropical. Saliendo le invité un vaso de <a href="https://es.wikipedia.org/wiki/Guarapo" target="_blank" rel="noopener">guarapo</a>, una bebida a base de caña de azúcar que es deliciosamente refrescante, y seguimos caminando, esta vez hacia la <a href="http://www.plazaminorista.com.co/sitio/" target="_blank" rel="noopener">plaza minorista</a> para buscar algo de comer. La plaza minorista es como un mercado enorme, y como casi todos los mercados, tiene una zona de comida y la comida que nos sirvieron fue muy buena.</p>
+<p>Habíamos caminado la mayor parte del trayecto, así que estábamos ya algo cansados y decidimos regresar a su casa para descansar y esperar a Cristina, su esposa. Cuando ella llegó estuvimos platicando otro rato y luego fuimos a buscar algo para hacer de cenar. Me gustó mucho estar con ellos, son buenas personas, y la dinámica que tienen con los vecinos es interesante, donde de repente las puertas están abiertas y los niños de otros departamentos van y vienen en sus juegos, ¡muy divertido!</p>
+<p>Al día siguiente salimos temprano Daniel y yo (Cristina había salido antes a su trabajo) porque tenía ganas de ir a conocer una <a href="http://www.guiaturisticademedellin.com/index.php/es/atractivos/centro-historico-top/12-pantalla-de-agua" target="_blank" rel="noopener">pantalla de agua</a> que había visto. Empezamos a bajar caminando al lugar donde estaba, y justamente antes de llegar nos topamos con otro lugar que fue de mis experiencias favoritas: el <a href="http://www.museocasadelamemoria.org/" target="_blank" rel="noopener">Museo Casa de la Memoria</a>. No lo tenía contemplado, pero que lugar tan maravilloso.</p>
+<p>Medellín es conocido en gran parte porque fue hogar y base de Pablo Escobar, aquél famoso narcotráficante, además de que Colombia tiene/tuvo cierta fama de ser muy inseguro por las FARC y lo relacionado a eso. Este museo intenta hacer ver a los visitantes que la violencia en Medellín existe desde antes y sigue existiendo después de estos hechos, que las causas tienen raíces mas profundas, y lo que se esta haciendo para mejorar la situación. Nos explicaron las migraciones que ha tenido desde y hacia, lo que han causado, los distintos grupos militantes que han existido, los parques biblioteca (!una idea increíble!) y muchas más cosas. Al final resultó que la pantalla de agua estaba apagada, pero el museo valió la pena.</p>
+<p>Después fuimos hacia el centro, entramos al <a href="http://www.culturantioquia.gov.co/" target="_blank" rel="noopener">Instituto de Cultura y Patrimonio de Antioquia</a> y saliendo pasamos por la <a href="http://www.tripadvisor.com.mx/Attraction_Review-g297478-d1994585-Reviews-Plaza_Botero-Medellin_Antioquia_Department.html" target="_blank" rel="noopener">Plaza Botero</a>, donde esperamos de nuevo a Cristina para irnos a buscar algo de comer y luego ir a otra zona a visitar a los papás de Daniel. De ahí sugirieron ir al estadio, la zona alrededor donde hay instalaciones deportivas y mucha actividad por la noche. De camino pasamos por un supermercado a comprar unas cervezas para tomarlas mientras caminábamos. Para terminar ese día me llevaron a conocer el <a href="http://www.eltiempo.com/colombia/medellin/parque-del-periodista-de-medellin/15359315" target="_blank" rel="noopener">Parque del Periodista</a>, donde estuvimos tomando cervezas un rato hasta que decidimos que estábamos lo suficientemente cansados como para ir a casa a descansar.</p>
+<p>Para mi último día en Medellín no tenía nada planeado, en parte estaba un poco cansado de la caminata de los días pasados y quería descansar un poco pues en la noche partía a Cali y era un viaje de alrededor de 12 horas, así que me la pase platicando con Daniel y Cristina y jugando un poco con los niños de los departamentos cercanos. Por la noche, después de despedirme, un vecino del lugar me llevó a la terminal de autobuses y de listo, ¡a <a href="/2015-10-30--colombia-cali-e-ipiales/">Cali</a>!</p>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/f32c066e652e3bc1ae3717f7ebf8e775/69b4b/medellin1.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAHTIwhGkv/EABkQAAIDAQAAAAAAAAAAAAAAAAECABETEv/aAAgBAQABBQJSqDUcs1MAWFXMp//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/Aaf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAbEAADAAIDAAAAAAAAAAAAAAAAASEQERIxYf/aAAgBAQAGPwKng+LgrTSmu8f/xAAbEAEAAwADAQAAAAAAAAAAAAABABEhMUFRkf/aAAgBAQABPyG6c52hx8ik5GRQcjyUTYs9rib1bn//2gAMAwEAAgADAAAAEED/AP/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/EFE//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAgEBPxBRmn//xAAcEAEAAgMAAwAAAAAAAAAAAAABABEhMUFRcbH/2gAIAQEAAT8QRA3BDHddiYzlrAT2rUQBdIvWYcEAFpySn1Kjt8/Y3JdJ2f/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Meddelin 1"
+        title=""
+        src="/static/f32c066e652e3bc1ae3717f7ebf8e775/1697e/medellin1.jpg"
+        srcset="/static/f32c066e652e3bc1ae3717f7ebf8e775/a2cfd/medellin1.jpg 148w,
+/static/f32c066e652e3bc1ae3717f7ebf8e775/3348f/medellin1.jpg 295w,
+/static/f32c066e652e3bc1ae3717f7ebf8e775/1697e/medellin1.jpg 590w,
+/static/f32c066e652e3bc1ae3717f7ebf8e775/6a00a/medellin1.jpg 885w,
+/static/f32c066e652e3bc1ae3717f7ebf8e775/46304/medellin1.jpg 1180w,
+/static/f32c066e652e3bc1ae3717f7ebf8e775/07574/medellin1.jpg 1770w,
+/static/f32c066e652e3bc1ae3717f7ebf8e775/69b4b/medellin1.jpg 2048w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/2c8d29934470b9de7163e77a1a41dfb7/36103/medellin2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/9oADAMBAAIQAxAAAAGjbiYYKRhMusaKAw//xAAcEAACAgIDAAAAAAAAAAAAAAABAgARAzESEyH/2gAIAQEAAQUC7IM5p2LHgsIqajtQHoIuZNLqf//EABgRAQEAAwAAAAAAAAAAAAAAAAEAEBEh/9oACAEDAQE/AU7aZx//xAAZEQACAwEAAAAAAAAAAAAAAAABAgAQERL/2gAIAQIBAT8BVhk6F//EAB0QAAMAAAcAAAAAAAAAAAAAAAABIQIQESAyQZH/2gAIAQEABj8C4CShcS9yjLoXvd//xAAaEAEAAwEBAQAAAAAAAAAAAAABABExQSFh/9oACAEBAAE/IbD6HNiwB/JzqKgOrhede3ZAPATAN0oC7kVbOMFQ7P/aAAwDAQACAAMAAAAQB+V8/8QAFxEBAQEBAAAAAAAAAAAAAAAAAREAEP/aAAgBAwEBPxBWl5Ca7//EABcRAQEBAQAAAAAAAAAAAAAAAAERABD/2gAIAQIBAT8QHIPKFNN//8QAGxABAQEBAQEBAQAAAAAAAAAAAREAITFBUYH/2gAIAQEAAT8QTH4Y7+Hw3CPKGccMSskqle3+4aoPCrAzILuQEf26lWOrcVSygHgdzGO/PmoJsjT3eMEHnMCw93Of/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Meddelin 2"
+        title=""
+        src="/static/2c8d29934470b9de7163e77a1a41dfb7/1697e/medellin2.jpg"
+        srcset="/static/2c8d29934470b9de7163e77a1a41dfb7/a2cfd/medellin2.jpg 148w,
+/static/2c8d29934470b9de7163e77a1a41dfb7/3348f/medellin2.jpg 295w,
+/static/2c8d29934470b9de7163e77a1a41dfb7/1697e/medellin2.jpg 590w,
+/static/2c8d29934470b9de7163e77a1a41dfb7/6a00a/medellin2.jpg 885w,
+/static/2c8d29934470b9de7163e77a1a41dfb7/46304/medellin2.jpg 1180w,
+/static/2c8d29934470b9de7163e77a1a41dfb7/07574/medellin2.jpg 1770w,
+/static/2c8d29934470b9de7163e77a1a41dfb7/36103/medellin2.jpg 1944w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/120f2eb28cce1ed066f51362776cb9fc/69b4b/medellin-jardin-botanico-1.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAVxbOBiaCP/EABoQAAMAAwEAAAAAAAAAAAAAAAECAwAREhP/2gAIAQEAAQUC5wKS3hzgqSJ1baQ2v//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AUf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8BbX//xAAaEAACAgMAAAAAAAAAAAAAAAAAAQIREiFh/9oACAEBAAY/ArpiNROlMTyZ/8QAGRABAQEAAwAAAAAAAAAAAAAAAREAITFR/9oACAEBAAE/IRPgLmKUXrAMZHnl3Z4MiYVwzBfN/9oADAMBAAIAAwAAABDU3//EABcRAQADAAAAAAAAAAAAAAAAAAEQESH/2gAIAQMBAT8Qdbh//8QAFhEBAQEAAAAAAAAAAAAAAAAAACFh/9oACAECAQE/EKwf/8QAHBABAQACAwEBAAAAAAAAAAAAAREAMSFBUWGB/9oACAEBAAE/ELCbQkpkJQObr5nnul4vWEiNKWP5glSIKG57MbJmouB7mf/Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Jardin Botanico 1"
+        title=""
+        src="/static/120f2eb28cce1ed066f51362776cb9fc/1697e/medellin-jardin-botanico-1.jpg"
+        srcset="/static/120f2eb28cce1ed066f51362776cb9fc/a2cfd/medellin-jardin-botanico-1.jpg 148w,
+/static/120f2eb28cce1ed066f51362776cb9fc/3348f/medellin-jardin-botanico-1.jpg 295w,
+/static/120f2eb28cce1ed066f51362776cb9fc/1697e/medellin-jardin-botanico-1.jpg 590w,
+/static/120f2eb28cce1ed066f51362776cb9fc/6a00a/medellin-jardin-botanico-1.jpg 885w,
+/static/120f2eb28cce1ed066f51362776cb9fc/46304/medellin-jardin-botanico-1.jpg 1180w,
+/static/120f2eb28cce1ed066f51362776cb9fc/07574/medellin-jardin-botanico-1.jpg 1770w,
+/static/120f2eb28cce1ed066f51362776cb9fc/69b4b/medellin-jardin-botanico-1.jpg 2048w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/247301153ba93501d9ee885cdb680cb2/69b4b/medellin-jardin-botanico-2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAEAA//aAAwDAQACEAMQAAABlbM8xlBv/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAIBERMDEv/aAAgBAQABBQJevltqNJJWzNmimP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AYj/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGq/8QAHBAAAgAHAAAAAAAAAAAAAAAAAAEQESExMmGB/9oACAEBAAY/AtMu+lUThkf/xAAcEAEAAwACAwAAAAAAAAAAAAABABExIWFBUdH/2gAIAQEAAT8htHeCvkstAwj3i9xV4zASLtvLon//2gAMAwEAAgADAAAAEP8AH//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/ELU//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QIf/EABsQAQACAwEBAAAAAAAAAAAAAAEAESFBUWEx/9oACAEBAAE/EM7OQRkO+o342a1Iab7E1DWw2eRMUo3VbjYCDcSZb7QE/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Jardin Botanico 2"
+        title=""
+        src="/static/247301153ba93501d9ee885cdb680cb2/1697e/medellin-jardin-botanico-2.jpg"
+        srcset="/static/247301153ba93501d9ee885cdb680cb2/a2cfd/medellin-jardin-botanico-2.jpg 148w,
+/static/247301153ba93501d9ee885cdb680cb2/3348f/medellin-jardin-botanico-2.jpg 295w,
+/static/247301153ba93501d9ee885cdb680cb2/1697e/medellin-jardin-botanico-2.jpg 590w,
+/static/247301153ba93501d9ee885cdb680cb2/6a00a/medellin-jardin-botanico-2.jpg 885w,
+/static/247301153ba93501d9ee885cdb680cb2/46304/medellin-jardin-botanico-2.jpg 1180w,
+/static/247301153ba93501d9ee885cdb680cb2/07574/medellin-jardin-botanico-2.jpg 1770w,
+/static/247301153ba93501d9ee885cdb680cb2/69b4b/medellin-jardin-botanico-2.jpg 2048w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/0d7a17e3ce3cb5e46a03e13363a433ac/36103/medellin-jardin-botanico-3.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHIeRYAuLFNGmzDkgP/xAAbEAACAgMBAAAAAAAAAAAAAAACAwABEBEhEv/aAAgBAQABBQJYbugGoddHsSsyjAJZL9bSTACyPFY//8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/ASv/xAAWEQADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8BI//EAB4QAAEEAQUAAAAAAAAAAAAAAAABESExAhAgIqGx/9oACAEBAAY/AuVD4WSnekOMpAyelLs//8QAGxABAAMBAQEBAAAAAAAAAAAAAQARITFRQYH/2gAIAQEAAT8hLE0lIDT5cs7UICKB/CM+2ZKN73sBSajIBFgtClHsIsitz//aAAwDAQACAAMAAAAQ1xRC/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPxBQjIf/xAAXEQEAAwAAAAAAAAAAAAAAAAABABAR/9oACAECAQE/EBmr/8QAHxABAAICAQUBAAAAAAAAAAAAAQARITFBYXGBkaHw/9oACAEBAAE/EESANDVveMIrlygdXhv3CC4AstFylF2i/IyvZGBTy6JkmpRLCfiBRaZ4jdYLiNpvZG8IA01cTW43KO2Z/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Jardin Botanico 3"
+        title=""
+        src="/static/0d7a17e3ce3cb5e46a03e13363a433ac/1697e/medellin-jardin-botanico-3.jpg"
+        srcset="/static/0d7a17e3ce3cb5e46a03e13363a433ac/a2cfd/medellin-jardin-botanico-3.jpg 148w,
+/static/0d7a17e3ce3cb5e46a03e13363a433ac/3348f/medellin-jardin-botanico-3.jpg 295w,
+/static/0d7a17e3ce3cb5e46a03e13363a433ac/1697e/medellin-jardin-botanico-3.jpg 590w,
+/static/0d7a17e3ce3cb5e46a03e13363a433ac/6a00a/medellin-jardin-botanico-3.jpg 885w,
+/static/0d7a17e3ce3cb5e46a03e13363a433ac/46304/medellin-jardin-botanico-3.jpg 1180w,
+/static/0d7a17e3ce3cb5e46a03e13363a433ac/07574/medellin-jardin-botanico-3.jpg 1770w,
+/static/0d7a17e3ce3cb5e46a03e13363a433ac/36103/medellin-jardin-botanico-3.jpg 1944w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/69b4b/medellin-parque-botero.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABsvJaSpmD/8QAGRABAQADAQAAAAAAAAAAAAAAAQIAAxIE/9oACAEBAAEFAj0RUu2DNmw6mQeTEM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAgMAAAAAAAAAAAAAAAAAARAhETEy/9oACAEBAAY/At4OkUy5/8QAGhABAAIDAQAAAAAAAAAAAAAAAQARECExUf/aAAgBAQABPyHzR0cRP1Uig2jbyWp//9oADAMBAAIAAwAAABCU3//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EIj/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPxCq/8QAHBABAQEAAwADAAAAAAAAAAAAAREAITFRYYHR/9oACAEBAAE/EH04gt6/frDFi9F1NIShjEK5PjUUM8mS2JfHf//Z'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Parque Botero 1"
+        title=""
+        src="/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/1697e/medellin-parque-botero.jpg"
+        srcset="/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/a2cfd/medellin-parque-botero.jpg 148w,
+/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/3348f/medellin-parque-botero.jpg 295w,
+/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/1697e/medellin-parque-botero.jpg 590w,
+/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/6a00a/medellin-parque-botero.jpg 885w,
+/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/46304/medellin-parque-botero.jpg 1180w,
+/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/07574/medellin-parque-botero.jpg 1770w,
+/static/7109f64e07c6e14e01fa2c7e4ce8f9b5/69b4b/medellin-parque-botero.jpg 2048w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    
+
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/ac2a9eb506f66d85453ee244f74973c5/36103/medellin-parque-botero-2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAb0ryjjlhKYrOWgjK//EABwQAQEAAgIDAAAAAAAAAAAAAAECABEDIRASIv/aAAgBAQABBQLL7fgw5Z9bWhEwjWSsG7fC9VdD/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/ASP/xAAXEQADAQAAAAAAAAAAAAAAAAAAEBES/9oACAECAQE/AaaUP//EABwQAAICAgMAAAAAAAAAAAAAAAAhAREQIiAxcf/aAAgBAQAGPwLDkuzR+G0s7FwUn//EABsQAAMBAAMBAAAAAAAAAAAAAAABESExUYGx/9oACAEBAAE/IVj5omhcEUeggr+gZRy6QcDrXI5n8K+xlaRzUj//2gAMAwEAAgADAAAAEEDUgv/EABYRAQEBAAAAAAAAAAAAAAAAABEAEP/aAAgBAwEBPxAcM3//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQIf/aAAgBAgEBPxBI0YVP/8QAHhABAQACAQUBAAAAAAAAAAAAAREAITFBUWFxkYH/2gAIAQEAAT8QWph7wUbA5XAfkW8NXno8nswokXeIeN4cFjk2H5ilI1hMFd30Zk9BptRH7h3H3JKopcQwwYOf/9k='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Parque Botero 2"
+        title=""
+        src="/static/ac2a9eb506f66d85453ee244f74973c5/1697e/medellin-parque-botero-2.jpg"
+        srcset="/static/ac2a9eb506f66d85453ee244f74973c5/a2cfd/medellin-parque-botero-2.jpg 148w,
+/static/ac2a9eb506f66d85453ee244f74973c5/3348f/medellin-parque-botero-2.jpg 295w,
+/static/ac2a9eb506f66d85453ee244f74973c5/1697e/medellin-parque-botero-2.jpg 590w,
+/static/ac2a9eb506f66d85453ee244f74973c5/6a00a/medellin-parque-botero-2.jpg 885w,
+/static/ac2a9eb506f66d85453ee244f74973c5/46304/medellin-parque-botero-2.jpg 1180w,
+/static/ac2a9eb506f66d85453ee244f74973c5/07574/medellin-parque-botero-2.jpg 1770w,
+/static/ac2a9eb506f66d85453ee244f74973c5/36103/medellin-parque-botero-2.jpg 1944w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><p>Escrito por <strong>Eduardo Reveles</strong>, dev &amp; gamer viviendo en la caótica Ciudad de México.<!-- --> <a href="https://twitter.com/osiux">Sígueme en twitter</a></p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/colombia-bogota">← <!-- -->Colombia: Bogotá</a></li><li><a rel="next" href="/colombia-cali-e-ipiales">Colombia: Cali e Ipiales<!-- --> →</a></li></ul></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      
+      }
+      </script><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='UA-130842966-2',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-130842966-2', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"colombia-medellin-7ba","path":"/colombia-medellin"};window.dataPath="759/path---colombia-medellin-7-ba-f02-Q3lGdTJg2LNIY8SiBeUe7rUPDAQ";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.b6f197430f783b3e67aa.css","/app-2d3fa2b6ef9997eb3255.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-d0cc086b9ed3d9211257.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-488f3ff65783f501ea32.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ad73747bb7261bb719ea.js"],"component---src-pages-index-js":["/component---src-pages-index-js-beb6560952a20af75eec.js"]};/*]]>*/</script><script src="/webpack-runtime-bf3853b111de70b95816.js" async=""></script><script src="/app-2d3fa2b6ef9997eb3255.js" async=""></script><script src="/0-7446a300839740498125.js" async=""></script><script src="/1-4b4f1862100537708504.js" async=""></script><script src="/component---src-templates-blog-post-js-488f3ff65783f501ea32.js" async=""></script></body></html>
